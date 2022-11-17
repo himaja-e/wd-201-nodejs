@@ -9,7 +9,7 @@ const readline = require("readline");
 const lineDetail = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-});
+
 
 lineDetail.question(`port `, (port) => {
   lineDetail.close();
@@ -26,4 +26,6 @@ fs.readFile("home.html", (err, home) => {
       response.end();
     })
     .listen(${port});
+});
+
 });
