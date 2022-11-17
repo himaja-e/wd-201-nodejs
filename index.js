@@ -2,7 +2,7 @@ const hello = () => {
   console.log("Hello Node.js!");
 }
 
-hello();
+
 
 const readline = require("readline");
 
@@ -13,7 +13,7 @@ const lineDetail = readline.createInterface({
 
 lineDetail.question(`port `, (port) => {
   lineDetail.close();
-});
+
 
 fs.readFile("home.html", (err, home) => {
   if (err) {
